@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.footer-bck {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 5px;
+}
+.div-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.div-footer span {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 150px;
+  max-height: 3rem;
+}
+.div-footer .logo {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 1.75rem;
+  letter-spacing: 0.25rem;
+}
+/* ------- Contato --------- */
+.contato {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+.contato ul {
+  display: flex;
+  flex-flow: wrap row;
+}
+.contato li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.contato a {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.espaco-img {
+  margin-right: 0.5rem;
+}
+.espaco-git {
+  margin-right: 0.5rem;
+}
+a:hover {
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 1px 1px 2px rgba(17, 0, 255, 0.5),
+    1px 1px 3px rgba(0, 255, 255, 0.75);
+  text-decoration: none;
+}
+.footer .contato {
+  width: 60%;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.5);
+  justify-content: flex-end;
+}
+/* ---------- copyright ----------*/
+.copyright {
+  display: flex;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  justify-content: center;
+  padding: 10px;
+}
+.color-footer {
+  color: rgba(255, 255, 255, 0.85);
+}
+.bck-color {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.container-logo {
+  display: flex;
+  flex: 1 0 650px;
+  max-width: 700px;
+}
+.container-contato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 60%;
+  max-width: 70%;
+}
+/* ------------------ MediaQuery ------------------*/
+@media screen and (max-width: 1025px) {
+  .div-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex: 0;
+  }
+  .contato {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 881px) {
+  .container-contato {
+    width: 100vw;
+  }
+  .contato ul li {
+    display: flex;
+    flex: 1 0 45%;
+    text-align: start;
+    margin: 0 auto;
+  }
+  .contato ul li a {
+    display: flex;
+    justify-content: center;
+    min-width: 170px;
+  }
+}
+@media screen and (max-width: 621px) {
+  .container-contato .contato {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .contato li {
+    padding: 0.5rem;
+  }
+}

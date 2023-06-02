@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.carrossel {
+  margin: 0 auto;
+  width: 512px;
+  height: 288px;
+  overflow: hidden; /* esconder outras imgs*/
+  border-radius: 15px;
+  transition: all 0.4s;
+}
+.container {
+  width: 2560px;
+  display: flex;
+}
+.padding-carrossel {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* tamanho de cada img  */
+.image img {
+  width: 512px;
+  height: 288px;
+}
+#atual {
+  margin-left: 0;
+  transition: all 2s;
+}
+.btn-carrossel {
+  position: absolute;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-top: -5px;
+}
+.btn-carrossel:hover {
+  transform: scale(1.15);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
+}
+.btn-carrossel .fa-chevron-left {
+  transform: rotate(-90deg);
+}
+.btn-carrossel .fa-chevron-right {
+  transform: rotate(90deg);
+}
+#back {
+  top: 45%;
+  left: 0;
+}
+#next {
+  top: 45%;
+  right: 0;
+}
+.balls {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 512px;
+  margin-top: -45px;
+}
+.balls div {
+  transition: all 0.5s;
+  border: 2px solid rgba(0, 255, 255, 0.85);
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.balls div:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.imgAtual {
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media screen and (max-width: 532px) {
+  .carrossel {
+    width: 256px;
+    height: 144px;
+    border-radius: 7px;
+    transition: all 0.4s;
+  }
+  .container {
+    width: 1280px;
+  }
+  .image img {
+    width: 256px;
+    height: 144px;
+  }
+  .btn-carrossel {
+    padding: 0px;
+    transition: all 0.4s;
+    margin-top: -10px;
+  }
+  .balls {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 256px;
+    margin-top: -30px;
+  }
+  .balls div {
+    border: 2px solid cyan;
+    padding: 4px;
+  }
+  #back,
+  #next {
+    top: 50%;
+    right: 0;
+    width: 25px;
+    height: 25px;
+  }
+}
